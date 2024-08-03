@@ -1,195 +1,212 @@
-body {
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9;
-    font-size: 16px;
-    width: 100%;
+body { 
+  font-family: 'Raleway'; 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  background-color: #f4f4f9; 
+  font-size: 16px; 
+  width: 100%; 
+} 
+
+header { 
+  background-color: #298cb3; 
+  color: white; 
+  text-align: center; 
+  padding: 40px 0; 
 }
 
-header {
-    background-color: #298cb3;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
+header .profile img { 
+  border-radius: 50%; 
+  width: 150px; 
+  height: 150px; 
+  margin-bottom: 20px; 
+} 
+
+nav { 
+  background-color: #22353d; 
+} 
+
+nav ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+} 
+
+nav ul li { 
+  margin: 0 15px; 
+} 
+
+nav ul li a { 
+  color: white; 
+  text-decoration: none; 
+  font-size: 18px; 
+  padding: 14px 20px; 
+  display: block; 
+} 
+
+nav ul li a:hover { 
+  background-color: #575757; 
+  border-radius: 5px; 
+} 
+
+main { 
+  padding: 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+} 
+
+section { 
+  margin-bottom: 40px; 
+} 
+
+h2 { 
+  border-bottom: 3px solid #0b6487; 
+  padding-bottom: 10px; 
+  color: #333; 
+} 
+
+.volunteer, 
+.edu { 
+  margin-bottom: 20px; 
+  background-color: white; 
+  padding: 15px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+
+ul { 
+  list-style: none; 
+  padding: 0; 
+} 
+
+ul li { 
+  margin: 5px 0; 
+  padding: 10px; 
+  border-radius: 5px; 
+} 
+
+footer { 
+  background-color: #22353d; 
+  color: white; 
+  text-align: center; 
+  padding: 10px 0; 
+  position: relative; 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+} 
+
+.footer-container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  height: 100%; 
+} 
+
+.footer-section { 
+  margin: 10px 0; 
+} 
+
+.footer-section a { 
+  margin: 0 10px; 
+  text-decoration: none; 
+  color: white; 
+  font-size: 24px; 
+} 
+
+.footer-section a:hover { 
+  color: #ddd; 
+} 
+
+.linkedin { 
+  font-size: 36px; 
+  color: white;
+}  
+
+.github { 
+  font-size: 36px; 
+} 
+
+.email { 
+  font-size: 36px; 
+} 
+
+.linkedin::before {
+    content: "\f08c"; /* LinkedIn icon code */
+}
+.github::before {
+    content: "\f09b"; /* GitHub icon code */
+}
+.email::before {
+    content: "\f0e0"; /* Email icon code */
 }
 
-header .profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-}
+footer p { 
+  margin: 30px 0 0 0; 
+} 
 
-nav {
-    background-color: #22353d;
-}
+@media (max-width: 768px) { 
+  nav ul { 
+    flex-direction: column; 
+  } 
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+  nav ul li { 
+    margin: 10px 0; 
+  } 
+} 
 
-nav ul li {
-    margin: 0 15px;
-}
+#skills ul { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+} 
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 14px 20px;
-    display: block;
-}
+#skills ul li { 
+  background-color: white; 
+  margin: 5px 0; 
+  padding: 10px; 
+  border-radius: 5px; 
+} 
 
-nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
+#honors-awards ul { 
+  list-style: none; 
+  padding: 0; 
+} 
 
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+#honors-awards ul li { 
+  background-color: white; 
+  margin: 10px 0; 
+  padding: 15px; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+} 
 
-section {
-    margin-bottom: 40px;
-}
+#honors-awards ul li p { 
+  margin: 5px 0 0 0; 
+} 
 
-h2 {
-    border-bottom: 3px solid #0b6487;
-    padding-bottom: 10px;
-    color: #333;
-  
-}
+#skills { 
+  background-color: #f4f4f9; 
+} 
 
-.volunteer, .edu {
-    margin-bottom: 20px;
-    background-color: white;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+.skills-container { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+} 
 
-ul {
-    list-style: none;
-    padding: 0;
-}
+.skill { 
+  margin: 10px 0; 
+} 
 
-ul li {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #22353d;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
-
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%; 
-}
-
-.footer-section {
-    margin: 10px 0;
-}
-
-.footer-section a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 24px; 
-}
-
-.footer-section a:hover {
-    color: #ddd;
-}
-
-.fab {
-    font-size: 36px; 
-}
-
-footer p {
-    margin: 10px 0 0 0; 
-}
-
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-#skills ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-#skills ul li {
-    background-color: white;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-#honors-awards ul {
-    list-style: none;
-    padding: 0;
-}
-
-#honors-awards ul li {
-    background-color: white;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#honors-awards ul li p {
-    margin: 5px 0 0 0;
-}
-
-#skills {
-    background-color: #f4f4f9;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.skill {
-    margin: 10px 0;
-}
-
-.skill span {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+.skill span { 
+  display: block; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+} 
 
 .progress {
     background-color: #e0e0e0;
@@ -201,273 +218,289 @@ footer p {
 .progress-bar {
     background-color: #4CAF50;
     height: 100%;
+    width: 0; /* Start with 0 width */
     line-height: 20px;
     color: white;
     text-align: center;
-    transition: width 1s ease-in-out;
-}
-
-#contact {
-    background-color: #f4f4f9;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+    transition: width 1s ease-in-out; /* Add transition for animation */
 }
 
 
-footer {
-    padding: 100px 10px; 
-    margin-top: 100px;
-}
+#contact { 
+  background-color: #f4f4f9; 
+} 
 
+form { 
+  display: flex; 
+  flex-direction: column; 
+  max-width: 600px; 
+} 
 
-.footer-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
- 
-.footer-section {
-            margin: 10px 0;
-        }
-        .footer-section a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            font-size: 24px; 
-        }
-        .footer-section a:hover {
-            color: #ddd;
-        }
-        .fab {
-            font-size: 36px; 
-        }
+label { 
+  margin-top: 10px; 
+  font-weight: bold; 
+} 
 
- body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
+input, 
+textarea { 
+  padding: 10px; 
+  margin-top: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  width: 100%; 
+} 
 
-body.dark-mode header {
-  background-color: #073a7d;
-}
+footer { 
+  padding: 100px 10px; 
+  margin-top: 100px; 
+} 
 
-body.dark-mode nav {
-    background-color: #042045;
-}
+.footer-container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+} 
 
-body.dark-mode nav ul li a {
-    color: white;
-}
+.footer-section { 
+  margin: 10px 0; 
+} 
 
-body.dark-mode h2 {
-    border-bottom-color: #ccc;
-    color: white;
-}
+.footer-section a { 
+  margin: 0 10px; 
+  text-decoration: none; 
+  color: white; 
+  font-size: 24px; 
+} 
 
-body.dark-mode .progress {
-    background-color: #555;
-}
+.footer-section a:hover { 
+  color: #ddd; 
+} 
 
-body.dark-mode .progress-bar {
-    background-color: #76c7c0;
-}
+.linkedin { 
+  font-size: 36px; 
+} 
+
+.github { 
+  font-size: 36px; 
+} 
+
+.envelope { 
+  font-size: 36px; 
+} 
+
+body.dark-mode { 
+  background-color: #121212; 
+  color: white; 
+} 
+
+body.dark-mode header { 
+  background-color: #073a7d; 
+} 
+
+body.dark-mode nav { 
+  background-color: #042045; 
+} 
+
+body.dark-mode nav ul li a { 
+  color: white; 
+} 
+
+body.dark-mode h2 { 
+  border-bottom-color: #ccc; 
+  color: white; 
+} 
+
+body.dark-mode .progress { 
+  background-color: #555; 
+} 
+
+body.dark-mode .progress-bar { 
+  background-color: #76c7c0; 
+} 
 
 body.dark-mode form input, 
-body.dark-mode form textarea {
-    background-color: #333;
-    border-color: #555;
-}
+body.dark-mode form textarea { 
+  background-color: #333; 
+  border-color: #555; 
+} 
 
-body.dark-mode form button {
-    background-color: #555;
-}
+body.dark-mode form button { 
+  background-color: #555; 
+} 
 
-body.dark-mode footer {
-    background-color: #042045;
-}
+body.dark-mode footer { 
+  background-color: #042045; 
+} 
 
-body.dark-mode .footer-section a {
-    color: white;
-}
+body.dark-mode .footer-section a { 
+  color: white; 
+} 
 
-body.dark-mode .footer-section a {
-    color: white;
-}
+body.dark-mode #skills { 
+  background-color: #1e1e1e; 
+} 
 
-body.dark-mode #skills {
-    background-color: #1e1e1e;
-}
+body.dark-mode .progress { 
+  background-color: white; 
+} 
 
-body.dark-mode .progress {
-    background-color: white; 
-}
+body.dark-mode .progress-bar { 
+  background-color: #4eada5; 
+} 
 
-body.dark-mode .progress-bar {
-    background-color: #4eada5; 
-}
-
-body.dark-mode .skills-container .skill span {
-    color: white; 
-}
+body.dark-mode .skills-container .skill span { 
+  color: white; 
+} 
 
 body.dark-mode .volunteer, 
 body.dark-mode .edu, 
 body.dark-mode #skills ul li, 
-body.dark-mode #honors-awards ul li {
-    background-color: #1e1e1e;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-}
+body.dark-mode #honors-awards ul li { 
+  background-color: #1e1e1e; 
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); 
+} 
 
-body.dark-mode form {
-    background-color: #1e1e1e;
-}
+body.dark-mode form { 
+  background-color: #1e1e1e; 
+} 
 
-body.dark-mode form label {
-    color: white;
-}
+body.dark-mode form label { 
+  color: white; 
+} 
 
 body.dark-mode form input, 
-body.dark-mode form textarea {
-    background-color: white;
-    color: white;
-    border-color: #555;
+body.dark-mode form textarea { 
+  background-color: white; 
+  color: white; 
+  border-color: #555; 
+} 
+
+body.dark-mode form button { 
+  background-color: #555; 
+  color: white; 
+} 
+
+body.dark-mode form button:hover { 
+  background-color: #666; 
+} 
+
+body.dark-mode #contact { 
+  background-color: #1e1e1e; 
+} 
+
+#theme-toggle { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px; 
+} 
+
+#toggle-checkbox { 
+  display: none; 
+} 
+
+.toggle-label { 
+  position: relative; 
+  width: 100px; 
+  height: 40px; 
+  background-color: #ccc; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 10px; 
+  box-sizing: border-box; 
+} 
+
+.toggle-label::before { 
+  content: ''; 
+  position: absolute; 
+  top: 5px; 
+  left: 5px; 
+  width: 30px; 
+  height: 30px; 
+  background-color: white; 
+  border-radius: 50%; 
+  transition: transform 0.3s ease; 
+} 
+
+#toggle-checkbox:checked + .toggle-label::before { 
+  transform: translateX(60px); 
+} 
+
+.toggle-icon { 
+  font-size: 24px; 
+  color: #ffeb3b; 
+} 
+
+.moon { 
+  color: #2196f3; 
+} 
+
+@keyframes typing { 
+  from { 
+    width: 0; 
+  } 
+  to { 
+    width: 100%; 
+  } 
+} 
+
+@keyframes blink-caret { 
+  from, 
+  to { 
+    border-color: transparent; 
+  } 
+  50% { 
+    border-color: black; 
+  } 
+} 
+
+.intro-container { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: auto; 
+  text-align: center; 
+  margin: 10px 0; 
+} 
+
+#intro { 
+  width: 24ch; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  border-right: 3px solid; 
+  animation: typing 4s steps(24), blink-caret 0.75s step-end infinite; 
+} 
+
+button { 
+  padding: 10px; 
+  margin-top: 20px; 
+  background-color: #4CAF50; 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+} 
+
+button:hover { 
+  background-color: #45a049; 
 }
 
-body.dark-mode form button {
-    background-color: #555;
-    color: white;
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+  position: relative;
 }
 
-body.dark-mode form button:hover {
-    background-color: #666;
+.progress-bar {
+  background-color: #4CAF50;
+  height: 100%;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  transition: width 1s ease-in-out; 
 }
-
-body.dark-mode #skills {
-    background-color: #1e1e1e;
-}
-
-body.dark-mode #contact {
-    background-color: #1e1e1e;
-}
-
-
- #theme-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-#toggle-checkbox {
-    display: none;
-}
-
-.toggle-label {
-    position: relative;
-    width: 100px; /* Make the toggle longer */
-    height: 40px; /* Adjust height as needed */
-    background-color: #ccc;
-    border-radius: 20px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.toggle-label::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 30px; 
-    height: 30px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-#toggle-checkbox:checked + .toggle-label::before {
-    transform: translateX(60px); 
-}
-
-.toggle-icon {
-    font-size: 24px; 
-    color: #ffeb3b; 
-}
-
-.moon {
-    color: #2196f3; 
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-}
-
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-}
-
-.intro-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; 
-    text-align: center;
-    margin: 10px 0; 
-}
-
-#intro {
-    width: 24ch; 
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation: typing 4s steps(24), blink-caret 0.75s step-end infinite;
-}
-
-
-button {
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
