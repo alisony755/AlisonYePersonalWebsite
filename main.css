@@ -222,7 +222,7 @@ footer p {
     line-height: 20px;
     color: white;
     text-align: center;
-    transition: width 1s ease-in-out; /* Add transition for animation */
+    transition: width 1s ease-in-out; 
 }
 
 
@@ -438,24 +438,23 @@ body.dark-mode #contact {
   color: #2196f3; 
 } 
 
-@keyframes typing { 
-  from { 
-    width: 0; 
-  } 
-  to { 
-    width: 100%; 
-  } 
-} 
+@keyframes typing {
+    from { 
+      width: 0; 
+  }
+    to { 
+      width: 100; 
+  }
+}
 
-@keyframes blink-caret { 
-  from, 
-  to { 
-    border-color: transparent; 
-  } 
-  50% { 
-    border-color: black; 
-  } 
-} 
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+@keyframes hide-caret {
+    to { border-right: none; }
+}
 
 .intro-container { 
   display: flex; 
@@ -467,7 +466,7 @@ body.dark-mode #contact {
 } 
 
 #intro { 
-  width: 24ch; 
+  width: 16ch; /* Length of cursor animation */
   white-space: nowrap; 
   overflow: hidden; 
   border-right: 3px solid; 
