@@ -72,3 +72,39 @@ const skillsSection = document.querySelector('#skills');
     const observer = new IntersectionObserver(handleIntersect, options);
     observer.observe(skillsSection);
 });
+
+// Command line simulator
+document.addEventListener('DOMContentLoaded', () => {
+    const cliInput = document.getElementById('cli-input');
+    const cliOutput = document.getElementById('cli-output');
+
+    const commands = {
+        help: 'Available commands: help, hi, about, major, skills, theme, bio, contact',
+        about: 'I am Alison Ye, an Honors Computer Science student at Northeastern University.',
+        major: 'I am majoring in computer science with a concentration in AI.',
+        skills: 'Java, C, JavaScript, Python, Machine Learning, HTML & CSS, Leadership, Team Collaboration, UX, Graphic Design',
+        bio: 'I am a third-year Northeastern student passionate about AI and Machine Learning.',
+        theme: () => {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            return 'Theme toggled!';
+        },
+        contact: 'You can contact me via email at ye.ali@northeastern.edu.',
+        hi: 'Hi! My name is Alison Ye.'
+    };
+
+    cliInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const input = cliInput.value.trim().toLowerCase(); // Convert input to lowercase
+            if (commands[input]) {
+                const output = commands[input];
+                cliOutput.innerHTML += `> ${input}\n${typeof output === 'function' ? output() : output}\n\n`;
+            } else {
+                const availableCommands = Object.keys(commands).join(', ');
+                cliOutput.innerHTML += `> ${input}\nCommand not available. Available commands are: ${availableCommands}\n\n`;
+            }
+            cliInput.value = '';
+            cliOutput.scrollTop = cliOutput.scrollHeight; // Scroll to the bottom
+        }
+    });
+});
