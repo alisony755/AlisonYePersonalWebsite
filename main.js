@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cliOutput = document.getElementById('cli-output');
 
     const commands = {
-        help: 'Available commands: help, hi, about, major, skills, theme, bio, contact',
+        help: 'Available commands: help, hi, about, major, skills, theme, bio, contact, bye',
         about: 'I am Alison Ye, an Honors Computer Science student at Northeastern University.',
         major: 'I am majoring in computer science with a concentration in AI.',
         skills: 'Java, C, JavaScript, Python, Machine Learning, HTML & CSS, Leadership, Team Collaboration, UX, Graphic Design',
@@ -90,12 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
             return 'Theme toggled!';
         },
         contact: 'You can contact me via email at ye.ali@northeastern.edu.',
-        hi: 'Hi! My name is Alison Ye.'
+        hi: 'Hi! My name is Alison Ye.',
+        bye: 'Bye! Hope I\'ll see you again soon.'
     };
 
     cliInput.addEventListener('keydown', (event) => {
         if (event.key === 'Enter') {
-            const input = cliInput.value.trim().toLowerCase(); // Convert input to lowercase
+            const input = cliInput.value.trim().toLowerCase();
             if (commands[input]) {
                 const output = commands[input];
                 cliOutput.innerHTML += `> ${input}\n${typeof output === 'function' ? output() : output}\n\n`;
@@ -104,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cliOutput.innerHTML += `> ${input}\nCommand not available. Available commands are: ${availableCommands}\n\n`;
             }
             cliInput.value = '';
-            cliOutput.scrollTop = cliOutput.scrollHeight; // Scroll to the bottom
+            cliOutput.scrollTop = cliOutput.scrollHeight;
         }
     });
 });
