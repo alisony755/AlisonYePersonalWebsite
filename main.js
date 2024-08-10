@@ -78,6 +78,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const cliInput = document.getElementById('cli-input');
     const cliOutput = document.getElementById('cli-output');
 
+    const hours = new Date().getHours();
+    let greeting;
+
+    if (hours >= 5 && hours < 12) {
+        greeting = 'Good morning! My name is Alison Ye.';
+    } else if (hours >= 12 && hours < 18) {
+        greeting = 'Good afternoon! My name is Alison Ye.';
+    } else {
+        greeting = 'Good evening! My name is Alison Ye.';
+    }
+
     const commands = {
         help: 'Available commands: help, hi, about, major, skills, theme, bio, contact, bye',
         about: 'I am Alison Ye, an Honors Computer Science student at Northeastern University.',
@@ -85,12 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
         skills: 'Java, C, JavaScript, Python, Machine Learning, HTML & CSS, Leadership, Team Collaboration, UX, Graphic Design',
         bio: 'I am a third-year Northeastern student passionate about AI and Machine Learning.',
         theme: () => {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
+            document.body.classList.toggle('dark-mode');
             return 'Theme toggled!';
         },
         contact: 'You can contact me via email at ye.ali@northeastern.edu.',
-        hi: 'Hi! My name is Alison Ye.',
+        hi: greeting,
         bye: 'Bye! Hope I\'ll see you again soon.'
     };
 
