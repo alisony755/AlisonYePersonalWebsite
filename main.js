@@ -90,10 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const commands = {
-        help: 'Available commands: help, hi, about, major, skills, theme, bio, contact, bye',
+        help: 'Available commands: help, hi, about, major, skills, languages, theme, bio, contact, bye',
         about: 'I am Alison Ye, an Honors Computer Science student at Northeastern University.',
         major: 'I am majoring in computer science with a concentration in AI.',
         skills: 'Java, C, JavaScript, Python, Machine Learning, HTML & CSS, Leadership, Team Collaboration, UX, Graphic Design',
+        languages: 'Racket, Java, C++, C, Python, HTML & CSS',
         bio: 'I am a third-year Northeastern student passionate about AI and Machine Learning.',
         theme: () => {
             document.body.classList.toggle('dark-mode');
