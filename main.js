@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         contact: 'You can contact me via email at ye.ali@northeastern.edu.',
         hi: greeting,
-        bye: 'Bye! Hope I\'ll see you again soon.'
+        bye: 'Bye! I hope I\'ll see you again soon.'
     };
 
     cliInput.addEventListener('keydown', (event) => {
