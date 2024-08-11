@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const intro = document.getElementById('intro');
     setTimeout(() => {
         intro.classList.add('no-caret');
-    }, 4000); // Duration of the typing animation
+    }, 6000); // Duration of the typing animation
 
     // Skill bar animation
 const skillsSection = document.querySelector('#skills');
