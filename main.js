@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const intro = document.getElementById('intro');
     setTimeout(() => {
         intro.classList.add('no-caret');
-    }, 6000); // Duration of the typing animation
+    }, 4000); // Duration of the typing animation
 
     // Skill bar animation
 const skillsSection = document.querySelector('#skills');
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const commands = {
-        help: 'Available commands: help, hi, about, major, skills, languages, theme, bio, contact, bye',
+        help: 'Available commands: help, hi, about, major, skills, languages, theme, bio, contact, bye, party',
         about: 'I am Alison Ye, an Honors Computer Science student at Northeastern University.',
         major: 'I am majoring in computer science with a concentration in AI.',
         skills: 'Java, C, JavaScript, Python, Machine Learning, HTML & CSS, Leadership, Team Collaboration, UX, Graphic Design',
@@ -102,7 +102,15 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         contact: 'You can contact me via email at ye.ali@northeastern.edu.',
         hi: greeting,
-        bye: 'Bye! I hope I\'ll see you again soon.'
+        party: () => {
+            confetti({
+                particleCount: 150,
+                spread: 60,
+                origin: { y: 0.6 }
+            });
+            return 'Party time! 🎉';
+        },
+      bye: 'Bye! Hope I\'ll see you again soon.'
     };
 
     cliInput.addEventListener('keydown', (event) => {
