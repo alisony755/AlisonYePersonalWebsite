@@ -83,14 +83,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (hours >= 5 && hours < 12) {
         greeting = 'Good morning! My name is Alison Ye.';
-    } else if (hours >= 12 && hours < 18) {
+    } else if (hours >= 12 and hours < 18) {
         greeting = 'Good afternoon! My name is Alison Ye.';
     } else {
         greeting = 'Good evening! My name is Alison Ye.';
     }
 
     const commands = {
-        help: 'Available commands: help, hi, about, major, skills, languages, theme, bio, contact, bye, party',
+        help: 'Available commands: help, hi, about, major, skills, languages, bio, contact, bye',
+        hi: greeting,
         about: 'I am Alison Ye, an Honors Computer Science student at Northeastern University.',
         major: 'I am majoring in computer science with a concentration in AI.',
         skills: 'Java, C, JavaScript, Python, Machine Learning, HTML & CSS, Leadership, Team Collaboration, UX, Graphic Design',
@@ -101,16 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return 'Theme toggled!';
         },
         contact: 'You can contact me via email at ye.ali@northeastern.edu.',
-        hi: greeting,
-        party: () => {
-            confetti({
-                particleCount: 150,
-                spread: 60,
-                origin: { y: 0.6 }
-            });
-            return 'Party time! 🎉';
-        },
-      bye: 'Bye! Hope I\'ll see you again soon.'
+        bye: 'Bye! Hope I\'ll see you again soon.'
     };
 
     cliInput.addEventListener('keydown', (event) => {
