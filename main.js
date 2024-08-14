@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (hours >= 5 && hours < 12) {
         greeting = 'Good morning! My name is Alison Ye.';
-    } else if (hours >= 12 and hours < 18) {
+    } else if (hours >= 12 && hours < 18) {
         greeting = 'Good afternoon! My name is Alison Ye.';
     } else {
         greeting = 'Good evening! My name is Alison Ye.';
