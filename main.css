@@ -438,23 +438,6 @@ body.dark-mode #contact {
   color: #2196f3; 
 } 
 
-@keyframes typing {
-    from { 
-      width: 0; 
-  }
-    to { 
-      width: 100; 
-  }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
-}
-
-@keyframes hide-caret {
-    to { border-right: none; }
-}
 
 .intro-container { 
   display: flex; 
@@ -465,14 +448,29 @@ body.dark-mode #contact {
   margin: 10px 0; 
 } 
 
-#intro { 
-  width: 16ch; /* Length of cursor animation */
-  white-space: nowrap; 
-  overflow: hidden; 
-  border-right: 3px solid; 
-  animation: typing 4s steps(24), blink-caret 0.75s step-end infinite; 
+#intro {
+  width: 16ch; /* Adjusted to match the length of the text */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 4s steps(16, end), blink-caret 0.75s step-end infinite; /* Adjusted steps to match text length */
   margin-bottom: 10px;
-} 
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 16ch; } /* Matches the width set above */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+.no-caret {
+  border-right: none; /* Removes caret after typing is done */
+}
+
 
 button { 
   padding: 10px; 
