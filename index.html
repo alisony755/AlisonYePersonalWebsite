@@ -1,216 +1,208 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alison Ye - Personal Website</title>
-
-  <!-- CSS Link -->
-  <link rel="stylesheet" href="main.css">
-
-  <!--- Fonts --->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alison Ye - Personal Website</title>
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Alumni+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Dyslexic&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <link rel="stylesheet" href="main.css">
+  
 </head>
-
 <body>
-  <header class="header">
-    <div class="head-container">
-      <div id="name">
-        <h1>Alison Ye</h1>
+    <header style="background-color: #dcd8ff">
+        <h3 id="quote">"Design is where science and art break even." – Robin Mathew</h3>
+    </header>
 
-        <!-- Social Links -->
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/alison-ye-00b5581b3/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-          <a href="https://github.com/alisony755"><i class="fab fa-github"></i> Github</a>
-          <a href="mailto:ye.ali@northeastern.edu"><i class="fas fa-envelope"></i> Email</a>
-          <a href="mailto:ye.ali@northeastern.edu"><i class="fa-regular fa-address-card"></i> My Card</a>
+  
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
 
+    <div class="container">
+        <div class="profile">
+            <img id="pfp" src="https://i.imgur.com/aIBBl0F.jpeg" alt="Profile Picture">
+            <div class="info">
+                <h1 id="first-name">Alison</h1>
+                <h1 id="last-name">Ye</h1>
+                <h2 id="tagline">3rd Year Computer Science Major with a <br> Concentration in AI</h2>
+            </div>
         </div>
 
-      </div>
+        <section id="about">
+            <h2 style="font-size: 2em; padding-top: 0.5em;">About</h2>
+            <div class="content">
+                <p>Alison is a driven third-year computer science student at Northeastern University, specializing in Artificial Intelligence with a deep interest in inclusive and user-centered design. She is passionate about leveraging technology to create innovative solutions that address real-world challenges, particularly those that empower underrepresented groups and communities. Although Alison is still building her expertise in coding, machine learning, and databases, she is eager to expand her knowledge and apply her skills in meaningful ways.
+<br><br>
+Throughout her academic journey, Alison has focused on developing a strong problem-solving mindset, which she applies to both individual projects and team collaborations. She believes in the power of technology to not only innovate but also to foster inclusivity, making it accessible to all users, regardless of their backgrounds or abilities. As part of her commitment to this mission, Alison has worked on several projects aimed at improving accessibility in technology and education.
+<br><br>
+In addition to her academic work, Alison is actively involved in creating opportunities for others to explore STEM fields. She volunteers as part of a club that offers tech workshops for high school students, helping to increase diversity and representation in these fields. Alison’s dedication to both personal growth and community outreach reflects her long-term goal of using her skills to make a tangible, positive impact on the world.</p>
+            </div>
+        </section>
 
-      <h2 id="caption">Honors Computer Science Student at <br>Northeastern University</h2>
+        <section id="contact">
+    <h2 style="font-size: 2em; padding-top: 0.5em;">Contact</h2>
+    <div class="content contact-links">
+        <div class="contact-item">
+            <ul>
+              <li><span class="material-symbols-outlined">send</span>
+<a href="mailto:ye.ali@northeastern.edu">Email Me</a></li>
+                <li><span class="material-symbols-outlined">home</span><a href="#">My Website</a></li>
+                <li><span class="material-symbols-outlined">code</span><a href="https://github.com/alisony755">My Github</a></li>
+                <li><span class="material-symbols-outlined">work</span><a href="https://www.linkedin.com/in/alison-ye-00b5581b3/">My LinkedIn</a></li>
+            </ul>
+        </div>
     </div>
+</section>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <a href="#about">01 About Me</a>
-      <i class="fas fa-circle dot"></i>
-      <a href="#edu">02 Education</a>
-      <i class="fas fa-circle dot"></i>
-      <a href="#volunteer">03 Volunteering</a>
-      <i class="fas fa-circle dot"></i>
-      <a href="#honors">04 Honors & Awards</a>
-      <i class="fas fa-circle dot"></i>
-      <a href="#skills">05 Skills</a>
-    </nav>
-  </header>
-
-  <main class="main-grid">
-     <!-- Profile image -->
-     <div class="picture">
-    <img id="pfp" padding="0" class="grid-item col-span-1" height=550em alt="Image of Alison Ye" src="https://i.imgur.com/aIBBl0F_d.webp?maxwidth=760&fidelity=grandF">
+      <section id="skills">
+    <h2 style="font-size: 2em; padding-top: 0.5em;">Skills</h2>
+    <div class="content">
+        <div class="skills-grid">
+            <div class="skill">
+                <span>Java</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Web Development</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Web Accessibility</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Project Management</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Team Collaboration</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Attention to Detail</span>
+                <div class="skill-bar">
+                    <div class="fill" style="width: 95%;"></div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- About Me Section -->
-    <div id="about" id="section" class="grid-item bg-purple col-span-2">
 
-      <h3>01 About Me</h3>
-      <p>Hello, I'm Alison Ye, a passionate and driven second-year computer science student with a concentration in AI. Over two years of college coursework, I've developed a strong foundation in object-oriented design and various programming languages, including Java, C, JavaScript, and Python. My studies have also introduced me to advanced topics in Machine Learning, sparking my interest in exploring innovative solutions to real-world problems.
-        <br><br>
-        I've also independently developed projects using HTML and CSS, which has helped me refine my skills in web development and design. I am eager to gain industry experience to further enhance my technical abilities and collaborate on meaningful projects. If you would like to connect or learn more, please feel free to reach out to me at <a href="mailto:ye.ali@northeastern.edu" target="_blank">ye.ali@northeastern.edu!</a>
-
+        <section id="experiences">
+  <h2 style="font-size: 2em; padding-top: 0.5em;">Experiences</h2>
+  <div class="content">
+    
+    <!-- FirstByte Card -->
+    <div class="card">
+      <p>
+        <span><strong>FirstByte</strong>
+        </span> <br>
+         <strong>Software-Website Team</strong><br>
+        2022 - Present <br>
+        I am contributing to the development of a dashboard that facilitates the registration process and provides easy access to materials for tech workshops aimed at local high school students enrolled at Camp Harbor View. My role involves designing the layout of the platform with a strong focus on creating an intuitive and user-friendly experience.
       </p>
     </div>
 
-    <!-- Education Section -->
-    <div id="edu" class="grid-item bg-yellow col-span-2" id="section">
-      <h3>02 Education</h3>
-      <h4>Northeastern University</h4>
-      <ul>
-        <li>Extracurriculars: FirstByte (Website team)</li>
-        <li>Past Coursework: Fundamentals of Computer Science I & II, Discrete Structures, Mathematics of Data Models, Object Oriented Design, Algorithms, C++, Cybersecurity</li>
-      </ul>
-      <h4>Canton High School</h4>
-      <ul>
-        <li>Extracurriculars: SPECTRUM News (Editor-in-Chief, Layout Designer, Advice Column Writer), Quizbowl (Co-captain), Human Rights Club (Co-president), Mu Alpha Theta (Tutor), SNHS (Tutor), NEHS (Tutor), NHS, Math team</li>
-        <li>AP Courses: US History, Language and Composition, Chemistry, BC Calculus, Statistics, Psychology, Biology, Literature and Composition</li>
-      </ul>
+    <!-- We Send Hope Card -->
+    <div class="card">
+      <p>
+        <span><strong>We Send Hope</strong>
+        </span> <br>
+         <strong>Co-Founder</strong><br>
+        2020 - 2022 <br>
+        I co-founded an organization at my high school aimed at supporting individuals experiencing homelessness during the COVID-19 pandemic. I helped organize our fundraiser to raise money so we would assemble and distribute over 30 care packages containing basic toiletries, rain ponchos, compressed towels, and other essentials. I also created the website (via Wix.com) and promotional material for the fundraiser.
+      </p>
     </div>
 
-    <!-- Volunteering Section -->
-    <div id="volunteer" class="grid-item bg-orange col-span-2" id="section">
-      <h3>03 Volunteering</h3>
-      <h4>We Send Hope - Co-founder</h4>
-      <ul>
-        <li>Co-founded organization dedicated to assisting people experiencing homelessness during COVID</li>
-        <li>Raised funds to create 30+ care packages to deliver to the homeless in the Boston area containing essential supplies such as first aid kits, towels, rain ponchos, and other toiletries</li>
-        <li>Designed our website, applying UX design principles essential for frontend development</li>
-      </ul>
-
-      <h4>MatchingDonors - Graphic Design Volunteer</h4>
-      <ul>
-        <li>Digitally designed and presented drafts of gifts for donors and merchandise</li>
-      </ul>
-
-      <h4>Combine Together and Create Action Foundation
-        - Curriculum Developer</h4>
-      <ul>
-        <li>Worked in a team to create simple curriculum outlines for students in Kenya from 6th grade to 8th grade</li>
-        <li>Designed chemistry and pre-algebra curriculums</li>
-      </ul>
+    <!-- MatchingDonors Card -->
+    <div class="card">
+      <p>
+        <span><strong>MatchingDonors</strong>
+        </span> <br>
+         <strong>Graphic Design Volunteer</strong><br>
+        2020 - 2021 <br>
+        I designed and presented gift concepts for donors with MatchingDonors, a non-profit organization dedicated to connecting patients in need of organ transplants with living donors. I also created promotional materials for social media.
+      </p>
     </div>
+  </div>
+</section>
 
-    <!-- Honors & Awards Section -->
-    <div id="honors" class="grid-item bg-purple col-span-3" id="section">
-      <h3>04 Honors & Awards</h3>
-      <h4>Dean's List</h4>
-      <ul>
-        <li>High achievement (3.50+ GPA) in my first 2 semesters of college</li>
-      </ul>
+       <section id="projects">
+    <h2 style="font-size: 2em; padding-top: 0.5em;">Projects</h2>
+    <div class="content">
+        <!-- FirstByte Project -->
+        <div class="project-card" style="display: flex; align-items: center;">
+            <img src="https://i.imgur.com/wjIZ1EZ.png" alt="FirstByte design screenshot" class="project-image" style="max-width: 150px; margin-right: 20px;">
+            <div class="project-details">
+                <h3 style="padding-top: 0.5em;">
+                    <a href="https://www.figma.com/design/IgY6xr3aERfo3l0Kj7k3U2/FirstByte-Workshop-Management?node-id=0-1&p=f&t=MZm8mpnkTnXIkPSU-0" target="_blank">FirstByte - Dashboard Design</a>
+                </h3>
+                <p style="font-size: 1.2em;">
+                    A conceptual Figma design for FirstByte's collaboration with Camp Harbor View. This dashboard allows users to register for workshops and access the workshop materials. While the idea is still in development, the design showcases potential features such as user profiles, project dashboards, and interactive elements, designed to create a seamless experience. This mock-up was built with an eye toward user-centered design.
+                </p>
+            </div>
+        </div>
 
-      <h4>AP Scholar with Distinction</h4>
-      <ul>
-        <li>Awarded to students who receive an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more of these exam</li>
-      </ul>
-
-      <h4>Honors Student</h4>
-      <ul>
-        <li>Selected to be part of the John Martinson Honors Program upon being admitted to Northeastern</li>
-      </ul>
-
-      <h4>National Merit Scholar Finalist</h4>
-      <ul>
-        <li>Recognized as 1 of the top 1% of high school seniors nationwide based on my PSAT/NMSQT scores</li>
-      </ul>
+        <!-- 2048 Game Project -->
+        <div class="project-card">
+            <img src="https://i.imgur.com/syEKBII.jpeg" alt="2048 game screenshot" class="project-image">
+            <div class="project-details">
+                <h3 style="padding-top: 0.5em;">
+                    <a href="https://alisony755.github.io/2048/" target="_blank">2048 Game</a>
+                </h3>
+                <p style="font-size: 1.2em">A recreation of the popular 2048 computer game, built using HTML, CSS, and JavaScript. It features the core game mechanics and smooth animations for an engaging user experience.</p>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- Skills Section -->
-    <div id="skills" class="grid-item bg-yellow col-span-3">
-      <h3>05 Skills</h3>
-
-      <div class="skill">
-        <p>Java</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 80%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>JavaScript</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 75%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>Python</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 60%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>Machine Learning</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 20%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>HTML & CSS</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 85%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>Leadership</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 60%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>Team Collaboration</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 90%;"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <p>UX/UI</p>
-        <div class="skill-bar">
-          <div class="skill-bar-fill" style="width: 40%;"></div>
-        </div>
-      </div>
     </div>
-
-    <!-- 2048 Game Section -->
-    <div id="2048" class="grid-item bg-orange col-span-2">
-      <h3>2048 Game</h3>
-      <img width=300rem src="https://i.imgur.com/syEKBII.jpeg" alt="2048 game preview">
-      <p>Independent project developed using HTML, CSS, and JavaScript. Based of off the popular <a href="https://play2048.co/" target="_blank">2048 game.</a></p>
-      <br>
-      <p>View it <a href="https://alisony755.github.io/2048/" target="_blank">here</a></p>
-    </div>
-
-    <!-- Accessibility Menu -->
-    <div id="accessibility-icon" onclick="toggleAccessibilityMenu()">
+       <div id="accessibility-icon" onclick="toggleAccessibilityMenu()">
       <i class="fas fa-universal-access"></i>
       <span class="accessibility-caption">Accessibility <br> Options</span>
     </div>
-
    
-    <div id="accessibility-menu" class="hidden">
+      <div id="accessibility-menu" class="hidden">
       <h3>Accessibility Options</h3>
-      
       <button onclick="increaseFontSize()">
         <i class="fa-solid fa-plus"></i> Increase Font Size
       </button>
@@ -221,25 +213,12 @@
         <i class="fa-regular fa-eye"></i> Dyslexia-Friendly Font
       </button>
     </div>
-  </main>
+      </div>
 
-  <footer>
-    <section id="contact">
-      <h2>Contact</h2>
-      <form id="contact-form" action="https://formspree.io/f/xpwaqvwp" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email:</label> <input type="email" id="email" name="email" required>
-        <label for="message">Message:</label> <textarea id="message" name="message" required></textarea>
-        <input type="submit" id="submit-form" value="Send">
-      </form>
-    </section>
-    <p align="center">© 2024 Alison Ye. All Rights Reserved.</p>
-    <br>
-  </footer>
-
-  <!-- JavaScript Link -->
-  <script src="main.js"></script>
+    <footer>
+        <p>&copy; 2024 Alison Ye's Portfolio</p>
+    </footer>
+  
+    <script src="main.js"></script>
 </body>
-
 </html>
