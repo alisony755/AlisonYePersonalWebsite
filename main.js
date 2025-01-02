@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
- document.addEventListener("DOMContentLoaded", () => {
   // Accessibility Menu Toggle
   window.toggleAccessibilityMenu = function () {
     const menu = document.getElementById("accessibility-menu");
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Change the quote every 5 seconds
+  // Change the quote every 10 seconds
   setInterval(changeQuote, 10000);
 
   // Skill Bar Animation
@@ -88,6 +87,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateWidth();  // Start the animation
   }
-});
-
 });
