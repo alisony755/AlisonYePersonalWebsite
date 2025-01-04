@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Change the quote every 10 seconds
+  // Change the quote every 5 seconds
   setInterval(changeQuote, 10000);
 
   // Skill Bar Animation
