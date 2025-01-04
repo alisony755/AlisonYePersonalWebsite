@@ -57,15 +57,26 @@ In addition to her academic work, Alison is actively involved in creating opport
 
         <section id="contact">
     <h2 style="font-size: 2em; padding-top: 0.5em;">Contact</h2>
-    <div class="content contact-links">
-        <div class="contact-item">
-            <ul>
-              <li><span class="material-symbols-outlined">send</span>
-<a href="mailto:ye.ali@northeastern.edu">Email Me</a></li>
-                <li><span class="material-symbols-outlined">home</span><a href="#">My Website</a></li>
-                <li><span class="material-symbols-outlined">code</span><a href="https://github.com/alisony755">My Github</a></li>
-                <li><span class="material-symbols-outlined">work</span><a href="https://www.linkedin.com/in/alison-ye-00b5581b3/">My LinkedIn</a></li>
-            </ul>
+    <div class="content contact-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="contact-card">
+            <span class="material-symbols-outlined" style="padding-top: 20px;">send</span>
+            <h3><a href="mailto:ye.ali@northeastern.edu">Email Me</a></h3>
+            <p>Send me an email</p>
+        </div>
+        <div class="contact-card">
+            <span class="material-symbols-outlined" style="padding-top: 20px;">home</span>
+            <h3><a href="#">My Website</a></h3>
+            <p>Visit my personal website</p>
+        </div>
+        <div class="contact-card">
+            <span class="material-symbols-outlined" style="padding-top: 20px;">code</span>
+            <h3><a href="https://github.com/alisony755">My Github</a></h3>
+            <p>See my coding projects</p>
+        </div>
+        <div class="contact-card">
+            <span class="material-symbols-outlined" style="padding-top: 20px;">work</span>
+            <h3><a href="https://www.linkedin.com/in/alison-ye-00b5581b3/">My LinkedIn</a></h3>
+            <p>Connect with me professionally</p>
         </div>
     </div>
 </section>
@@ -157,7 +168,7 @@ In addition to her academic work, Alison is actively involved in creating opport
           <br>
           <strong id="role">Co-Founder</strong>
           <br>
-          <span id="dates">May 2020 - September 2022</span>
+          <span id="dates">May 2021 - September 2022</span>
         </h3>
         <p id="description">
           I co-founded an organization at my high school aimed at supporting individuals experiencing homelessness during the COVID-19 pandemic. I helped organize our fundraiser to raise money so we would assemble and distribute 30+ care packages containing basic toiletries, rain ponchos, compressed towels, and other essentials. I also created the website (via Wix.com) and promotional material for the fundraiser.
@@ -219,9 +230,19 @@ In addition to her academic work, Alison is actively involved in creating opport
   </div>
 </div>
     
-<!-- Empty Project Card -->
-<div class="project-card" style="background-color:white; border-width: 0px;"></div>
-
+<!-- Digital Business Card -->
+<div class="project-card">
+  <img src="https://i.imgur.com/2PfcBee.png" alt="Digital Business Card Screenshot" class="project-image"> 
+<div class="project-details">
+    <h3>
+      <a href="https://alisonye-card.netlify.app" target="_blank">Digital Business Card</a>
+    </h3>
+          <strong id="role">Independent Project</strong>
+    <span id="dates">April 2024 - May 2024</span>
+    <p id="description">
+      This digital business card is designed to resemble a command line interface, featuring interactive commands that display information about me. Using HTML, CSS, and JavaScript, the card allows users to input commands to learn more about my skills, coding languages, and contact information, offering a creative and engaging way to present my profile.
+    </p>
+  </div>
     </div>
         
         <!-- Accessibility Menu -->
@@ -246,7 +267,7 @@ In addition to her academic work, Alison is actively involved in creating opport
 
     <footer>
       <section id="footer-form">
-      <h2>Contact</h2>
+      <h2>Send Me a Message</h2>
       <form id="contact-form" action="https://formspree.io/f/xpwaqvwp" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
