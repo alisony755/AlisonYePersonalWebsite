@@ -127,9 +127,10 @@ In addition to her academic work, Alison is actively involved in creating opport
 </section>
 
 
-     <section id="experiences">
+    <section id="experiences">
   <h2 style="font-size: 2em; padding-top: 0.5em;">Experiences</h2>
-  <div class="content grid-layout">
+  <div class="content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+    
     <!-- FirstByte Experience -->
     <div class="project-card">
       <img src="https://coe.northeastern.edu/wp-content/uploads/images/logos/firstbyte.png" alt="FirstByte logo" class="project-image">
@@ -146,6 +147,7 @@ In addition to her academic work, Alison is actively involved in creating opport
         </p>
       </div>
     </div>
+    
     <!-- We Send Hope Experience -->
     <div class="project-card">
       <img src="https://i.imgur.com/9pz3mC0.png" alt="We Send Hope logo" class="project-image">
@@ -162,6 +164,7 @@ In addition to her academic work, Alison is actively involved in creating opport
         </p>
       </div>
     </div>
+    
     <!-- MatchingDonors Experience -->
     <div class="project-card">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9jYnGBQI_hXX9Pxc0_QoL9aQnLkHcyXimQ&s" alt="MatchingDonors logo" class="project-image">
@@ -185,41 +188,39 @@ In addition to her academic work, Alison is actively involved in creating opport
   <h2 style="font-size: 2em; padding-top: 0.5em;">Projects</h2>
   <div class="content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
     
-    <!-- FirstByte Project -->
-    <div class="project-card">
-      <img src="https://i.imgur.com/wjIZ1EZ.png" alt="FirstByte design screenshot" class="project-image" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px;">
-      <div class="project-details">
-        <h3>
-          <a id="role" href="https://www.figma.com/design/IgY6xr3aERfo3l0Kj7k3U2/FirstByte-Workshop-Management?node-id=0-1&p=f&t=MZm8mpnkTnXIkPSU-0" target="_blank">FirstByte - Dashboard Design</a>
-        </h3>
-        <span id="dates" style="font-size: 1.2em; display: block; margin-top: -0.4em;">October 2024 - Present</span>
-        <p id="description">
-          A conceptual Figma design for FirstByte's collaboration with Camp Harbor View. This dashboard allows users to register for workshops and access the workshop materials. While the idea is still in development, the design showcases potential features such as user profiles, project dashboards, and interactive elements, designed to create a seamless experience. This mock-up was built with an eye toward user-centered design.
-        </p>
-      </div>
-    </div>
-
-<!-- 2048 Game Project -->
-    <div class="project-card">
-      <img src="https://i.imgur.com/syEKBII.jpeg" alt="2048 game screenshot" class="project-image" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px;">
-      <div class="project-details">
-        <h3>
-          <a id="role" href="https://alisony755.github.io/2048/" target="_blank">Simple 2048 Game</a>
-        </h3>
-        <span style="font-size: 1.2em; display: block; margin-top: -0.4em;">May 2024</span>
-        <p id="description">
-           A recreation of the popular 2048 puzzle game, built using HTML, CSS, and JavaScript. This project demonstrates my front-end development skills, focusing on implementing the core mechanics of tile movement and merging. I used CSS to create smooth animations, enhancing the overall gameplay experience. The game showcases my ability to develop interactive applications with JavaScript, emphasizing clean, intuitive design and engaging user interactions. 
-        </p>
-      </div>
-    </div>
-
-    <div class="project-card" style="background-color:white; border-width: 0px;">
-    </div>
-
+   <!-- FirstByte Project -->
+<div class="project-card">
+  <img src="https://i.imgur.com/wjIZ1EZ.png" alt="FirstByte design screenshot" class="project-image">
+  <div class="project-details">
+    <h3>
+      <a id="role" href="https://www.figma.com/design/IgY6xr3aERfo3l0Kj7k3U2/FirstByte-Workshop-Management?node-id=0-1&p=f&t=MZm8mpnkTnXIkPSU-0" target="_blank">FirstByte - Dashboard Design</a>
+    </h3>
+    <span id="dates">October 2024 - Present</span>
+    <p id="description">
+      A conceptual Figma design for FirstByte's collaboration with Camp Harbor View. This dashboard allows users to register for workshops and access the workshop materials. While the idea is still in development, the design showcases potential features such as user profiles, project dashboards, and interactive elements, designed to create a seamless experience. This mock-up was built with an eye toward user-centered design.
+    </p>
   </div>
-</section>
+</div>
+<!-- 2048 Game Project -->
+<div class="project-card">
+  <img src="https://i.imgur.com/syEKBII.jpeg" alt="2048 game screenshot" class="project-image">
+  <div class="project-details">
+    <h3>
+      <a id="role" href="https://alisony755.github.io/2048/" target="_blank">Simple 2048 Game</a>
+    </h3>
+    <span id="dates">May 2024</span>
+    <p id="description">
+      A recreation of the popular 2048 puzzle game, built using HTML, CSS, and JavaScript. This project demonstrates my front-end development skills, focusing on implementing the core mechanics of tile movement and merging. I used CSS to create smooth animations, enhancing the overall gameplay experience. The game showcases my ability to develop interactive applications with JavaScript, emphasizing clean, intuitive design and engaging user interactions. 
+    </p>
+  </div>
+</div>
+    
+<!-- Empty Project Card -->
+<div class="project-card" style="background-color:white; border-width: 0px;"></div>
 
     </div>
+        
+        <!-- Accessibility Menu -->
        <div id="accessibility-icon" onclick="toggleAccessibilityMenu()">
       <i class="fas fa-universal-access"></i>
       <span class="accessibility-caption">Accessibility <br> Options</span>
