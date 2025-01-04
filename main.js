@@ -11,19 +11,34 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Increase font size
   window.increaseFontSize = function () {
-    const body = document.body;
-    const currentSize = parseFloat(getComputedStyle(body).fontSize);
-    body.style.fontSize = currentSize + 2 + "px";
-  };
+  // Increase the font size for the entire body
+  const body = document.body;
+  const currentSize = parseFloat(getComputedStyle(body).fontSize);
+  body.style.fontSize = currentSize + 2 + "px";
 
-  // Decrease font size
-  window.decreaseFontSize = function () {
-    const body = document.body;
-    const currentSize = parseFloat(getComputedStyle(body).fontSize);
-    body.style.fontSize = currentSize - 2 + "px";
-  };
+  // Increase the font size for specific sections
+  const projectCards = document.querySelectorAll('.project-card, .project-card *');
+  projectCards.forEach(card => {
+    const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
+    card.style.fontSize = currentCardSize + 2 + "px";
+  });
+};
+
+window.decreaseFontSize = function () {
+  // Decrease the font size for the entire body
+  const body = document.body;
+  const currentSize = parseFloat(getComputedStyle(body).fontSize);
+  body.style.fontSize = currentSize - 2 + "px";
+
+  // Decrease the font size for specific sections
+  const projectCards = document.querySelectorAll('.project-card, .project-card *');
+  projectCards.forEach(card => {
+    const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
+    card.style.fontSize = currentCardSize - 2 + "px";
+  });
+};
+
 
   // Dyslexia-Friendly Font
   window.toggleDyslexiaFriendlyFont = function () {
@@ -60,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Change the quote every 10 seconds
+  // Change the quote every 5 seconds
   setInterval(changeQuote, 10000);
 
   // Skill Bar Animation
