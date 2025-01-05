@@ -19,12 +19,12 @@
   
 </head>
 <body>
-    <header style="background-color: #dcd8ff">
+    <header role="banner">
         <h3 id="quote">"Design is where science and art break even." – Robin Mathew</h3>
     </header>
 
   
-    <nav>
+    <nav role="navigation">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -34,7 +34,7 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div role="region" class="container">
         <div class="profile">
             <img id="pfp" src="https://i.imgur.com/aIBBl0F.jpeg" alt="Profile Picture">
             <div class="info">
@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <section id="about">
+        <section role="region" id="about">
             <h2 style="font-size: 2em; padding-top: 0.5em;">About</h2>
             <div class="content">
                 <p>I am a driven third-year computer science student at Northeastern University, specializing in Artificial Intelligence with a deep interest in inclusive and user-centered design. I am passionate about leveraging technology to create innovative solutions that address real-world challenges, particularly those that empower underrepresented groups and communities. Although I am still building her expertise in coding, machine learning, and databases, I am eager to expand my knowledge and apply my skills in meaningful ways.
@@ -55,82 +55,84 @@ In addition to my academic work, I am actively involved in creating opportunitie
             </div>
         </section>
 
-        <section id="contact">
+        <section role="region" id="contact">
     <h2 style="font-size: 2em; padding-top: 0.5em;">Contact</h2>
     <div class="content contact-links" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
         <div class="contact-card">
-            <span class="material-symbols-outlined" style="padding-top: 20px;">send</span>
-            <h3><a href="mailto:ye.ali@northeastern.edu">Email Me</a></h3>
-            <p>Send me an email.</p>
+            <span class="material-symbols-outlined" style="padding-top: 40px;">send</span>
+            <h3><a role="link" href="mailto:ye.ali@northeastern.edu">Email Me</a></h3>
+            <p>Send me an email</p>
         </div>
         <div class="contact-card">
+            <span class="material-symbols-outlined" style="padding-top: 40px;">code</span>
+            <h3><a role="link" href="https://github.com/alisony755">My Github</a></h3>
+            <p>See my coding projects</p>
+        </div>
+        <div class="contact-card">
+            <span class="material-symbols-outlined" style="padding-top: 40px;">work</span>
+            <h3><a role="link" href="https://www.linkedin.com/in/alison-ye-00b5581b3/">My LinkedIn</a></h3>
+            <p>Connect with me professionally</p>
+        </div>
+      
+       <div class="contact-card">
             <span class="material-symbols-outlined" style="padding-top: 20px;">home</span>
-            <h3><a href="#">My Website</a></h3>
-            <p>Visit my personal website.</p>
+            <h3><a role="link" href="https://alisonye.netlify.app/">My Website</a></h3>
+            <p>You are here :)</p>
         </div>
-        <div class="contact-card">
-            <span class="material-symbols-outlined" style="padding-top: 20px;">code</span>
-            <h3><a href="https://github.com/alisony755">My Github</a></h3>
-            <p>See my coding projects.</p>
-        </div>
-        <div class="contact-card">
-            <span class="material-symbols-outlined" style="padding-top: 20px;">work</span>
-            <h3><a href="https://www.linkedin.com/in/alison-ye-00b5581b3/">My LinkedIn</a></h3>
-            <p>Connect with me professionally.</p>
-        </div>
+      
     </div>
 </section>
 
-      <section id="skills">
+      <section role="region" id="skills">
     <h2 style="font-size: 2em; padding-top: 0.5em;">Skills</h2>
     <div class="content">
         <div class="skills-grid">
             <div class="skill">
                 <span>Java</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 80%;"></div>
+                    <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 80%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>JavaScript</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 75%;"></div>
+                    <div role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 75%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Python</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 50%;"></div>
+                    <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 50%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Web Development</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 85%;"></div>
+                    <div role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 85%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Web Accessibility</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 50%;"></div>
+                    <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 50%;"></div>
                 </div>
             </div>
             <div class="skill">
-                <span>Project Management</span>
+                <span>Analytical Thinking</span>
                 <div class="skill-bar">
-                  <div class="fill" style="width: 60%;"></div>
+                  <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 60%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Team Collaboration</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 90%;"></div>
+                    <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 90%;"></div>
                 </div>
             </div>
             <div class="skill">
                 <span>Attention to Detail</span>
                 <div class="skill-bar">
-                    <div class="fill" style="width: 95%;"></div>
+                    <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="fill" style="width: 90%;"></div>
                 </div>
             </div>
         </div>
@@ -138,7 +140,7 @@ In addition to my academic work, I am actively involved in creating opportunitie
 </section>
 
 
-    <section id="experiences">
+    <section role="region" id="experiences">
   <h2 style="font-size: 2em; padding-top: 0.5em;">Experiences</h2>
   <div class="content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
     
@@ -147,17 +149,11 @@ In addition to my academic work, I am actively involved in creating opportunitie
       <img src="https://coe.northeastern.edu/wp-content/uploads/images/logos/firstbyte.png" alt="FirstByte logo" class="project-image">
       <div class="project-details">
         <h3>
-          <a href="https://teachfirstbyte.com/" target="_blank"><strong>FirstByte</strong></a>
-          <br>
-          <strong id="role">Software-Website Team</strong>
-          <br>
-          <span id="dates">October 2024 - Present</span>
-        </h3>
+          <a role="link" href="https://teachfirstbyte.com/" target="_blank"><strong>FirstByte</strong></a></h3>
+        <h4><strong id="role">Software-Website Team</strong></h4>
+        <h5 id="dates">October 2024 - Present</h5>
         <p id="description">
-          I am contributing to the development of a dashboard that facilitates the registration process and provides easy access 
-            to materials for tech workshops aimed at local high school students enrolled at Camp Harbor View. 
-            My role involves designing the layout of the platform with a strong focus on creating an intuitive and user-friendly 
-            experience for students in grades 6-8.
+          I am contributing to the development of a dashboard that facilitates the registration process and provides easy access to materials for tech workshops aimed at local high school students enrolled at Camp Harbor View. My role involves designing the layout of the platform with a strong focus on creating an intuitive and user-friendly experience for students in grades 6-8.
         </p>
       </div>
     </div>
@@ -167,17 +163,12 @@ In addition to my academic work, I am actively involved in creating opportunitie
       <img src="https://i.imgur.com/9pz3mC0.png" alt="We Send Hope logo" class="project-image">
       <div class="project-details">
         <h3>
-          <a href="https://wesendhope.wixsite.com/mysite" target="_blank"><strong>We Send Hope</strong></a>
-          <br>
-          <strong id="role">Co-Founder</strong>
-          <br>
-          <span id="dates">May 2021 - September 2022</span>
-        </h3>
+          <a role="link" href="https://wesendhope.wixsite.com/mysite" target="_blank"><strong>We Send Hope</strong></a>
+             </h3>
+        <h4><strong id="role">Co-Founder</strong></h4>
+      <h5 id="dates">May 2021 - September 2022</h5>
         <p id="description">
-          I co-founded an organization at my high school aimed at supporting individuals experiencing homelessness during 
-            the COVID-19 pandemic. I helped organize our fundraiser to raise money so we would assemble and distribute 30+ 
-            care packages containing basic toiletries, rain ponchos, compressed towels, and other essentials. 
-            I also created the website (via Wix.com) and promotional material for our fundraiser.
+          I co-founded an organization at my high school aimed at supporting individuals experiencing homelessness during the COVID-19 pandemic. I helped organize our fundraiser to raise money so we would assemble and distribute 30+ care packages containing basic toiletries, rain ponchos, compressed towels, and other essentials. I also created the website (via Wix.com) and promotional material for our fundraiser.
         </p>
       </div>
     </div>
@@ -187,23 +178,20 @@ In addition to my academic work, I am actively involved in creating opportunitie
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg9jYnGBQI_hXX9Pxc0_QoL9aQnLkHcyXimQ&s" alt="MatchingDonors logo" class="project-image">
       <div class="project-details">
         <h3>
-          <a href="https://www.matchingdonors.com/life/" target="_blank"><strong>MatchingDonors</strong></a>
-          <br>
-          <strong id="role">Graphic Design Volunteer</strong>
-          <br>
-          <span id="dates">December 2020 - April 2021</span>
-        </h3>
+          <a role="link" href="https://www.matchingdonors.com/life/" target="_blank"><strong>MatchingDonors</strong></a>
+             </h3>
+        <h4><strong id="role">Graphic Design Volunteer</strong></h4>
+        <h5 id="dates">December 2020 - April 2021</h5>
+     
         <p id="description">
-           I designed and presented gift concepts for donors with MatchingDonors, a non-profit organization dedicated to 
-            connecting patients in need of organ transplants with living donors. I also created promotional materials for 
-            social media and updated the organization’s WordPress website by refreshing content.
+          I designed and presented gift concepts for donors with MatchingDonors, a non-profit organization dedicated to connecting patients in need of organ transplants with living donors. I also created promotional materials for social media and updated the organization’s WordPress website by refreshing content.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-      <section id="projects">
+      <section role="region" id="projects">
   <h2 style="font-size: 2em; padding-top: 0.5em;">Projects</h2>
   <div class="content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
     
@@ -212,36 +200,27 @@ In addition to my academic work, I am actively involved in creating opportunitie
   <img src="https://i.imgur.com/wjIZ1EZ.png" alt="FirstByte design screenshot" class="project-image">
   <div class="project-details">
     <h3>
-      <a href="https://www.figma.com/design/IgY6xr3aERfo3l0Kj7k3U2/FirstByte-Workshop-Management?node-id=0-1&p=f&t=MZm8mpnkTnXIkPSU-0" target="_blank">FirstByte - Dashboard Design</a>
+      <a role="link" href="https://www.figma.com/design/IgY6xr3aERfo3l0Kj7k3U2/FirstByte-Workshop-Management?node-id=0-1&p=f&t=MZm8mpnkTnXIkPSU-0" target="_blank">FirstByte - Dashboard Design</a>
     </h3>
-          <strong id="role">Software-Website Team</strong>
-          <br>
-    <span id="dates">October 2024 - Present</span>
+    <h4><strong id="role">Software-Website Team</strong></h4>
+    <h5 id="dates">October 2024 - Present</h5>
     <p id="description">
-      A conceptual Figma layout I am designing for FirstByte's collaboration with Camp Harbor View. 
-        This dashboard will allow users to register for workshops and access the workshop materials. 
-        While the idea is still in development, my design showcases potential features such as user profiles, 
-        project dashboards, and interactive elements, designed to create a seamless experience. This mock-up was 
-        built with an eye toward user-centered design.
+      A conceptual Figma layout I am designing for FirstByte's collaboration with Camp Harbor View. This dashboard will allow users to register for workshops and access the workshop materials. While the idea is still in development, my design showcases potential features such as user profiles, project dashboards, and interactive elements, designed to create a seamless experience. This mock-up was built with an eye toward user-centered design.
     </p>
   </div>
 </div>
+    
 <!-- 2048 Game Project -->
 <div class="project-card">
   <img src="https://i.imgur.com/syEKBII.jpeg" alt="2048 game screenshot" class="project-image">
   <div class="project-details">
     <h3>
-      <a href="https://alisony755.github.io/2048/" target="_blank">Simple 2048 Game</a>
+      <a role="link" href="https://alisony755.github.io/2048/" target="_blank">Simple 2048 Game</a>
     </h3>
-          <strong id="role">Independent Project</strong>
-          <br>
-    <span id="dates">May 2024</span>
+    <h4><strong id="role">Independent Project</strong></h4>
+    <h5 id="dates">May 2024</h5>
     <p id="description">
-      A recreation of the popular 2048 puzzle game, built using HTML, CSS, and JavaScript. 
-        This project demonstrates my front-end development skills, focusing on implementing the core mechanics of 
-        tile movement and merging. I used CSS to create smooth animations, enhancing the overall gameplay experience. 
-        The game showcases my ability to develop interactive applications with JavaScript, emphasizing clean, intuitive 
-        design and engaging user interactions. 
+      A recreation of the popular 2048 puzzle game, built using HTML, CSS, and JavaScript. This project demonstrates my front-end development skills, focusing on implementing the core mechanics of tile movement and merging. I used CSS to create smooth animations, enhancing the overall gameplay experience. The game showcases my ability to develop interactive applications with JavaScript, emphasizing clean, intuitive design and engaging user interactions. 
     </p>
   </div>
 </div>
@@ -251,21 +230,19 @@ In addition to my academic work, I am actively involved in creating opportunitie
   <img src="https://i.imgur.com/2PfcBee.png" alt="Digital Business Card Screenshot" class="project-image"> 
 <div class="project-details">
     <h3>
-      <a href="https://alisonye-card.netlify.app" target="_blank">Digital Business Card</a>
+      <a role="link" href="https://alisonye-card.netlify.app" target="_blank">Digital Business Card</a>
     </h3>
-          <strong id="role">Independent Project</strong>
-    <span id="dates">April 2024 - May 2024</span>
+  <h4><strong id="role">Independent Project</strong></h4>
+  <h5 id="dates">April 2024 - May 2024</h5>
     <p id="description">
-      This digital business card is designed to resemble a command line interface, featuring interactive commands that 
-        display information about me. Using HTML, CSS, and JavaScript, the card allows users to input commands to learn 
-        more about my skills, coding languages, and contact information, offering a creative and engaging way to present my profile.
+      This digital business card is designed to resemble a command line interface, featuring interactive commands that display information about me. Using HTML, CSS, and JavaScript, the card allows users to input commands to learn more about my skills, coding languages, and contact information, offering a creative and engaging way to present my profile.
     </p>
   </div>
     </div>
         
         <!-- Accessibility Menu -->
-       <div id="accessibility-icon" onclick="toggleAccessibilityMenu()">
-      <i class="fas fa-universal-access"></i>
+       <div role="menu" id="accessibility-icon" onclick="toggleAccessibilityMenu()">
+      <i class="fas fa-universal-access" style="font-size: 2rem;"></i>
       <span class="accessibility-caption">Accessibility <br> Options</span>
     </div>
    
@@ -278,21 +255,24 @@ In addition to my academic work, I am actively involved in creating opportunitie
         <i class="fa-solid fa-minus"></i> Decrease Font Size
       </button>
       <button onclick="toggleDyslexiaFriendlyFont()">
-        <i class="fa-regular fa-eye"></i> Dyslexia-Friendly Font
+        <i class="fa-solid fa-circle-half-stroke"></i> Dyslexia-Friendly Font
+      </button>
+         <button onclick="toggleHighContrastMode()">
+        <i class="fa-regular fa-eye"></i> High-Contrast Mode
       </button>
     </div>
       </div>
         </div>
 
-    <footer>
-      <section id="footer-form">
-      <h2>Send Me a Message</h2>
+    <footer role="contentinfo">
+      <section role="form" id="footer-form">
+      <h2>Send Me a Message!</h2>
       <form id="contact-form" action="https://formspree.io/f/xpwaqvwp" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
         <label for="email">Email:</label> <input type="email" id="email" name="email" required>
         <label for="message">Message:</label> <textarea id="message" name="message" required></textarea>
-        <input type="submit" id="submit-form" value="Send">
+       <input type="submit" id="submit-form" value="Send">
       </form>
     </section>
         <p style="text-align: center;">&copy; 2024 Alison Ye's Portfolio</p>
