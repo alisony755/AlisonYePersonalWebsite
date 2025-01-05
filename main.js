@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  window.increaseFontSize = function () {
+ window.increaseFontSize = function () {
   // Increase the font size for the entire body
   const body = document.body;
   const currentSize = parseFloat(getComputedStyle(body).fontSize);
@@ -23,6 +23,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
     card.style.fontSize = currentCardSize + 2 + "px";
   });
+
+  // Increase the font size for the navigation
+  const nav = document.querySelector('nav');
+  const currentNavSize = parseFloat(getComputedStyle(nav).fontSize);
+  nav.style.fontSize = currentNavSize + 2 + "px";
+
+  // Increase the font size for the first and last name
+  const firstName = document.querySelector('#first-name');
+  const lastName = document.querySelector('#last-name');
+  const currentFirstNameSize = parseFloat(getComputedStyle(firstName).fontSize);
+  const currentLastNameSize = parseFloat(getComputedStyle(lastName).fontSize);
+
+  firstName.style.fontSize = currentFirstNameSize + 2 + "px";
+  lastName.style.fontSize = currentLastNameSize + 2 + "px";
 };
 
 window.decreaseFontSize = function () {
@@ -37,14 +51,33 @@ window.decreaseFontSize = function () {
     const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
     card.style.fontSize = currentCardSize - 2 + "px";
   });
-};
 
+  // Decrease the font size for the navigation
+  const nav = document.querySelector('nav');
+  const currentNavSize = parseFloat(getComputedStyle(nav).fontSize);
+  nav.style.fontSize = currentNavSize - 2 + "px";
+
+  // Decrease the font size for the first and last name
+  const firstName = document.querySelector('#first-name');
+  const lastName = document.querySelector('#last-name');
+  const currentFirstNameSize = parseFloat(getComputedStyle(firstName).fontSize);
+  const currentLastNameSize = parseFloat(getComputedStyle(lastName).fontSize);
+
+  firstName.style.fontSize = currentFirstNameSize - 2 + "px";
+  lastName.style.fontSize = currentLastNameSize - 2 + "px";
+};
 
   // Dyslexia-Friendly Font
   window.toggleDyslexiaFriendlyFont = function () {
     document.body.classList.toggle("dyslexia-friendly-font");
   };
 
+  // High Contrast Mode
+ window.toggleHighContrastMode = function () {
+  document.body.classList.toggle("high-contrast-mode");
+};
+  
+  
   // Quote Changing Function
   const quotes = [
     '"Design is where science and art break even." – Robin Mathew',
