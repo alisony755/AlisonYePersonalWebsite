@@ -1,132 +1,133 @@
 body {
-    font-family: 'Afacad', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "Afacad", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p, ul {
+p,
+ul {
   font-size: 1.25em;
 }
 
 header {
-    background-color: #dcd8ff;
-    text-align: center;
-    padding: 1.25em;
+  background-color: #dcd8ff;
+  text-align: center;
+  padding: 1.25em;
 }
 
 header h1 {
-    font-family: 'Afacad', sans-serif;
-    font-size: 2em;
+  font-family: "Afacad", sans-serif;
+  font-size: 2em;
 }
 
 header h2 {
-    font-family: 'Alumni Sans', sans-serif;
-    font-size: 1.2em;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 1.2em;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .profile {
-    display: flex;
-    align-items: center;
-    margin-top: 4em;
+  display: flex;
+  align-items: center;
+  margin-top: 4em;
 }
 
 .profile img {
-    width: 400px;
-    height: 250px;
-    background-color: #ddd;
-    margin-right: 20px;
+  width: 400px;
+  height: 250px;
+  background-color: #ddd;
+  margin-right: 20px;
 }
 
 nav {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
 }
 
 nav ul li {
-    font-size: 20px;
-    margin: 0 50px;
-    padding: 15px 0px;
+  font-size: 20px;
+  margin: 0 50px;
+  padding: 15px 0px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .content ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 10px; 
-    list-style: none;
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
 }
 
 .content li {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
 }
 
 section {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 section h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 section .content {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 15px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
 }
 
 .contact-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;  
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .contact-item {
-    width: 48%;
+  width: 48%;
 }
 
 .contact-links ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .contact-links ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 footer {
-    margin-top: 50px;
-    padding: 20px;
-    border-top: 1px solid black;
-    background-color:#dcd8ff;
-    font-weight: bold;
-    width: 100% !important;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 1px solid black;
+  background-color: #dcd8ff;
+  font-weight: bold;
+  width: 100% !important;
 }
 
 #pfp {
-  height: 400px; 
+  height: 400px;
   width: auto;
 }
 
@@ -152,70 +153,87 @@ footer {
   font-weight: normal;
 }
 
-/* Contact Links */ 
-.contact-links, .content ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Contact Links */
+.contact-links,
+.content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-item ul, .content ul {
-    padding: 0;
-    list-style: none;
+.contact-item ul,
+.content ul {
+  padding: 0;
+  list-style: none;
 }
 
-.contact-item li, .content li {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
+.contact-item li,
+.content li {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
 }
 
 .contact-item i {
-    margin-right: 0.25em;
+  margin-right: 0.25em;
 }
 
 /* Skill Bars */
 .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
 }
 
 .skill {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 18px;
 }
 
 .skill span {
-    margin-bottom: 5px;
-    font-size: 1.2em;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.skill-bar,
+.fill {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .skill-bar {
-    width: 65%;
-    height: 15px;
-    background-color: white;
-    border: 1px solid black;
-    margin-top: 5px;
-    border-radius: 5px;
+  width: 70%;
+  height: 25px;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .fill {
-    height: 100%;
-    background-color: #424242;
-    border-radius: 4px;
-    width: 0%;
-    transition: width 2s ease-out;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #424242;
+  border-radius: inherit;
+  width: 0%;
+  transition: width 1s ease-out;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Styling for Contact Cards */
 .contact-links {
   display: flex;
   justify-content: space-between;
-  gap: 20px; 
-  overflow-x: auto; 
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .contact-card {
@@ -323,20 +341,21 @@ footer {
 }
 
 .project-card #role {
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .project-card #dates {
   margin-top: 0;
 }
 
-h4, h5 {
-  margin: 0;  
+h4,
+h5 {
+  margin: 0;
 }
 
-#role, #dates {
+#role,
+#dates {
   font-size: 20px;
-
 }
 
 /* Accessibility Meny */
@@ -434,18 +453,18 @@ h4, h5 {
 
 /* Dyslexia-Friendly Font Styling */
 .dyslexia-friendly-font {
-  font-family: 'Open Dyslexic', sans-serif;
+  font-family: "Open Dyslexic", sans-serif;
 }
 
 .dyslexia-friendly-font #first-name {
-  font-family: 'Open Dyslexic', sans-serif;
+  font-family: "Open Dyslexic", sans-serif;
   font-size: 70px;
   font-weight: bold;
-} 
+}
 
 .dyslexia-friendly-font #last-name {
-  font-family: 'Open Dyslexic', sans-serif;
-  font-size: 70px;
+  font-family: "Open Dyslexic", sans-serif;
+  font-size: 70px !important;
   font-weight: bold;
   margin-top: -50px;
 }
@@ -456,32 +475,38 @@ h4, h5 {
 }
 
 .dyslexia-friendly-font footer #submit-form {
-    font-family: 'Open Dyslexic', sans-serif;
+  font-family: "Open Dyslexic", sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
 
 .dyslexia-friendly-font footer input {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* High Contrast Mode Stying */
 .high-contrast-mode {
   background-color: white;
-  color: black; 
+  color: black;
 }
 
 .high-contrast-mode .skill-bar {
   border: 3px solid black;
 }
 
-.high-contrast-mode #submit-form, #accessibility-icon button {
-  background-color: black; 
-  color: white; 
+.high-contrast-mode .fill {
+  fill: 100px;
+}
+
+.high-contrast-mode #submit-form,
+#accessibility-icon button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .high-contrast-mode #submit-form:hover {
-  background-color: #333; 
+  background-color: #d1d1d1;
 }
 
 .high-contrast-mode header {
@@ -490,14 +515,13 @@ h4, h5 {
 }
 
 .high-contrast-mode footer {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
-.high-contrast-mode input, 
+.high-contrast-mode input,
 .high-contrast-mode textarea {
-  border: 3px solid black; 
-  background-color: white; 
+  background-color: white;
   color: black;
 }
 
@@ -505,115 +529,129 @@ h4, h5 {
   color: white !important;
 }
 
-.high-contrast-mode .contact-card, .high-contrast-mode .project-card {
+.high-contrast-mode .contact-card,
+.high-contrast-mode .project-card {
   background-color: black;
 }
 
-.high-contrast-mode .contact-card a:visited, .high-contrast-mode .project-card a:visited {
+.high-contrast-mode .contact-card a:visited,
+.high-contrast-mode .project-card a:visited {
   color: white;
 }
 
-.high-contrast-mode .contact-card h3 a, .high-contrast-mode .contact-card p, .high-contrast-mode .project-card h3, .high-contrast-mode .project-card h4, .high-contrast-mode .project-card h5, .high-contrast-mode .project-card p {
+.high-contrast-mode .contact-card h3 a,
+.high-contrast-mode .contact-card p,
+.high-contrast-mode .project-card h3,
+.high-contrast-mode .project-card h4,
+.high-contrast-mode .project-card h5,
+.high-contrast-mode .project-card p {
   color: white;
 }
 
-.high-contrast-mode .contact-card, .high-contrast-mode .project-card {
-  border: 3px solid black; 
+.high-contrast-mode .contact-card,
+.high-contrast-mode .project-card {
+  border: 3px solid black;
 }
 
-.high-contrast-mode #accessibility-menu button, .high-contrast-mode #accessibility-icon {
+.high-contrast-mode #accessibility-menu button,
+.high-contrast-mode #accessibility-icon {
   background-color: black;
   color: white;
 }
 
 .high-contrast-mode section .content {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 15px 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 15px 0;
 }
 
 .high-contrast-mode nav {
-    border-bottom: 3px solid black;
-    padding: 15px 0;
+  border-bottom: 3px solid black;
+  padding: 15px 0;
 }
 
 .high-contrast-mode #tagline {
-   border-top: 3px solid black;
-   border-bottom: 3px solid black;
-   padding: 15px 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 15px 0;
 }
 
 .high-contrast-mode footer {
-   border-top: 3px solid black;
-   padding: 15px 0;
+  border-top: 3px solid black;
+  padding: 15px 0;
 }
 
+.high-contrast-mode #icons a {
+  color: white;
+}
 
-/* Responsive Design: Media Queries */
+/* Adjust to screen size */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column; 
-        align-items: flex-start;
-        padding: 10px;
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
 
-    nav ul li {
-        margin: 10px 0; 
-    }
+  nav ul li {
+    margin: 10px 0;
+  }
 
-    .profile {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-    }
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .profile img {
-        width: 80%;
-        height: auto;
-    }
+  .profile img {
+    width: 80%;
+    height: auto;
+  }
 
-    #first-name, #last-name {
-        font-size: 5em; 
-    }
+  #first-name,
+  #last-name {
+    font-size: 5em;
+  }
 
-    #tagline {
-        font-size: 1.4em; 
-        text-align: center;
-        margin-top: 10px; 
-    }
+  #tagline {
+    font-size: 1.4em;
+    text-align: center;
+    margin-top: 10px;
+  }
 
-    p, ul {
-        font-size: 1.2em; 
-    }
+  p,
+  ul {
+    font-size: 1.2em;
+  }
 
-    .project-card {
-        flex-direction: column; 
-        align-items: center;
-    }
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .project-image {
-        margin: 0 0 10px 0;
-        width: 100%; 
-    }
+  .project-image {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
 
-    .project-details {
-        text-align: center;
-    }
+  .project-details {
+    text-align: center;
+  }
 
-    .name {
-        font-size: 3em; 
-        text-align: center;
-        margin-bottom: 5px; 
-    }
+  .name {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5px;
+  }
 
-    .line {
-        width: 80%;
-        margin: 10px auto; 
-        border: none;
-        border-top: 2px solid black;
-    }
-  
-    #footer-form {
+  .line {
+    width: 80%;
+    margin: 10px auto;
+    border: none;
+    border-top: 2px solid black;
+  }
+
+  #footer-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,7 +662,6 @@ h4, h5 {
     padding: 20px;
     box-sizing: border-box;
   }
-
 }
 
 /* Contact Form */
@@ -665,4 +702,20 @@ textarea {
 
 label {
   font-size: 20px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 30px;
+}
+
+#icons a {
+  color: black;
+}
+
+i:hover {
+  color: #616161;
+  cursor: pointer;
 }
