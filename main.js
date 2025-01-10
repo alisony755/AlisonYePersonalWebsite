@@ -11,61 +11,69 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
- window.increaseFontSize = function () {
-  // Increase the font size for the entire body
-  const body = document.body;
-  const currentSize = parseFloat(getComputedStyle(body).fontSize);
-  body.style.fontSize = currentSize + 2 + "px";
+  window.increaseFontSize = function () {
+    // Increase the font size for the entire body
+    const body = document.body;
+    const currentSize = parseFloat(getComputedStyle(body).fontSize);
+    body.style.fontSize = currentSize + 2 + "px";
 
-  // Increase the font size for specific sections
-  const projectCards = document.querySelectorAll('.project-card, .project-card *');
-  projectCards.forEach(card => {
-    const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
-    card.style.fontSize = currentCardSize + 2 + "px";
-  });
+    // Increase the font size for specific sections
+    const projectCards = document.querySelectorAll(
+      ".project-card, .project-card *"
+    );
+    projectCards.forEach((card) => {
+      const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
+      card.style.fontSize = currentCardSize + 2 + "px";
+    });
 
-  // Increase the font size for the navigation
-  const nav = document.querySelector('nav');
-  const currentNavSize = parseFloat(getComputedStyle(nav).fontSize);
-  nav.style.fontSize = currentNavSize + 2 + "px";
+    // Increase the font size for the navigation
+    const nav = document.querySelector("nav");
+    const currentNavSize = parseFloat(getComputedStyle(nav).fontSize);
+    nav.style.fontSize = currentNavSize + 2 + "px";
 
-  // Increase the font size for the first and last name
-  const firstName = document.querySelector('#first-name');
-  const lastName = document.querySelector('#last-name');
-  const currentFirstNameSize = parseFloat(getComputedStyle(firstName).fontSize);
-  const currentLastNameSize = parseFloat(getComputedStyle(lastName).fontSize);
+    // Increase the font size for the first and last name
+    const firstName = document.querySelector("#first-name");
+    const lastName = document.querySelector("#last-name");
+    const currentFirstNameSize = parseFloat(
+      getComputedStyle(firstName).fontSize
+    );
+    const currentLastNameSize = parseFloat(getComputedStyle(lastName).fontSize);
 
-  firstName.style.fontSize = currentFirstNameSize + 2 + "px";
-  lastName.style.fontSize = currentLastNameSize + 2 + "px";
-};
+    firstName.style.fontSize = currentFirstNameSize + 2 + "px";
+    lastName.style.fontSize = currentLastNameSize + 2 + "px";
+  };
 
-window.decreaseFontSize = function () {
-  // Decrease the font size for the entire body
-  const body = document.body;
-  const currentSize = parseFloat(getComputedStyle(body).fontSize);
-  body.style.fontSize = currentSize - 2 + "px";
+  window.decreaseFontSize = function () {
+    // Decrease the font size for the entire body
+    const body = document.body;
+    const currentSize = parseFloat(getComputedStyle(body).fontSize);
+    body.style.fontSize = currentSize - 2 + "px";
 
-  // Decrease the font size for specific sections
-  const projectCards = document.querySelectorAll('.project-card, .project-card *');
-  projectCards.forEach(card => {
-    const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
-    card.style.fontSize = currentCardSize - 2 + "px";
-  });
+    // Decrease the font size for specific sections
+    const projectCards = document.querySelectorAll(
+      ".project-card, .project-card *"
+    );
+    projectCards.forEach((card) => {
+      const currentCardSize = parseFloat(getComputedStyle(card).fontSize);
+      card.style.fontSize = currentCardSize - 2 + "px";
+    });
 
-  // Decrease the font size for the navigation
-  const nav = document.querySelector('nav');
-  const currentNavSize = parseFloat(getComputedStyle(nav).fontSize);
-  nav.style.fontSize = currentNavSize - 2 + "px";
+    // Decrease the font size for the navigation
+    const nav = document.querySelector("nav");
+    const currentNavSize = parseFloat(getComputedStyle(nav).fontSize);
+    nav.style.fontSize = currentNavSize - 2 + "px";
 
-  // Decrease the font size for the first and last name
-  const firstName = document.querySelector('#first-name');
-  const lastName = document.querySelector('#last-name');
-  const currentFirstNameSize = parseFloat(getComputedStyle(firstName).fontSize);
-  const currentLastNameSize = parseFloat(getComputedStyle(lastName).fontSize);
+    // Decrease the font size for the first and last name
+    const firstName = document.querySelector("#first-name");
+    const lastName = document.querySelector("#last-name");
+    const currentFirstNameSize = parseFloat(
+      getComputedStyle(firstName).fontSize
+    );
+    const currentLastNameSize = parseFloat(getComputedStyle(lastName).fontSize);
 
-  firstName.style.fontSize = currentFirstNameSize - 2 + "px";
-  lastName.style.fontSize = currentLastNameSize - 2 + "px";
-};
+    firstName.style.fontSize = currentFirstNameSize - 2 + "px";
+    lastName.style.fontSize = currentLastNameSize - 2 + "px";
+  };
 
   // Dyslexia-Friendly Font
   window.toggleDyslexiaFriendlyFont = function () {
@@ -73,11 +81,10 @@ window.decreaseFontSize = function () {
   };
 
   // High Contrast Mode
- window.toggleHighContrastMode = function () {
-  document.body.classList.toggle("high-contrast-mode");
-};
-  
-  
+  window.toggleHighContrastMode = function () {
+    document.body.classList.toggle("high-contrast-mode");
+  };
+
   // Quote Changing Function
   const quotes = [
     '"Design is where science and art break even." – Robin Mathew',
@@ -112,28 +119,31 @@ window.decreaseFontSize = function () {
   setInterval(changeQuote, 10000);
 
   // Skill Bar Animation
-  const skillBars = document.querySelectorAll('.fill');
+  const skillsSection = document.querySelector("#skills");
+  const progressBars = document.querySelectorAll(".fill");
 
-  skillBars.forEach((bar) => {
-    const targetWidth = bar.getAttribute('data-skill'); 
-    animateBar(bar, targetWidth);
-  });
+  if (skillsSection && progressBars.length > 0) {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    };
 
-  function animateBar(bar, targetWidth) {
-    let currentWidth = 0;
-    const step = targetWidth / 100; 
+    const handleIntersect = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          progressBars.forEach((bar) => {
+            const width = bar.getAttribute("data-width");
+            if (width) {
+              bar.style.width = width;
+            }
+          });
+          observer.unobserve(skillsSection);
+        }
+      });
+    };
 
-    function updateWidth() {
-      if (currentWidth < targetWidth) {
-        currentWidth += step;
-        bar.style.width = currentWidth + '%'; 
-        requestAnimationFrame(updateWidth);  
-      } else {
-        bar.style.width = targetWidth + '%'; 
-      }
-    }
-
-    updateWidth();  // Start the animation
+    const observer = new IntersectionObserver(handleIntersect, options);
+    observer.observe(skillsSection);
   }
 });
-
