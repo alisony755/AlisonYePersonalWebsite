@@ -28,7 +28,7 @@ This personal website was developed to serve as a central hub for showcasing my 
 
 ### In Progress
 - Keyboard navigation support  
-- Included more color themes
+- More color themes
 - Text-to-speech integration
 
 ## Accessibility Goals
